@@ -16,12 +16,9 @@ import java.util.Map;
 public class CompositeKeyFriendlyBankCardDetailsHolder<K, V> extends
 		AbstractBankCardDetailsHolder<K, V> {
 
-	/* Data holder */
-	private Map<K, V> cardDetails;
-
 	/* Constructors */
 	public CompositeKeyFriendlyBankCardDetailsHolder() {
-		cardDetails = new HashMap<K, V>();
+		this.cardDetails = new HashMap<K, V>();
 	}
 
 	public CompositeKeyFriendlyBankCardDetailsHolder(K key, V value) {

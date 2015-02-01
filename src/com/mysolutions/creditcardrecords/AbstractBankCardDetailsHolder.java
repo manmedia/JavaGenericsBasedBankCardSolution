@@ -5,14 +5,14 @@ import java.util.TreeMap;
 
 public abstract class AbstractBankCardDetailsHolder<K, V> {
 
-	private Map<K, V> cardData;
+	protected Map<K, V> cardDetails;
 
 	public AbstractBankCardDetailsHolder() {
-		cardData = new TreeMap<K, V>();
+		cardDetails = new TreeMap<K, V>();
 	}
 	
 	public AbstractBankCardDetailsHolder(K key, V value){
-		cardData.put(key, value);
+		cardDetails.put(key, value);
 	}
 	
 	public abstract Map<K, V> getAllCardDetails();
@@ -20,3 +20,4 @@ public abstract class AbstractBankCardDetailsHolder<K, V> {
 	public abstract void setAllCardDetails(Map<K,V> cardDetails);	
 	
 }
+
